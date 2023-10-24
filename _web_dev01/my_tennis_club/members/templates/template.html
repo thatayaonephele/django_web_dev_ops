@@ -1,0 +1,54 @@
+<!--Filtering out a specific record based on a 1st name search
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The queryset object:</p>
+
+{{ mymembers }}
+
+<p>Loop through the items:</p>
+
+<table border='1'>
+  <tr>
+    <th>ID</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  {% for x in mymembers %}
+    <tr>
+      <td>{{ x.id }}</td>
+      <td>{{ x.firstname }}</td>
+      <td>{{ x.lastname }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>
+-->
+
+
+<!--Loading of css using w3schools info not working...
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'myfirst.css' %}"></link>
+<body>
+
+{% for x in fruits %}
+  <h1>{{ x }}</h1>
+{% endfor %}
+
+<p>In myfirst.css you can see what the stylesheet looks like.</p>
+
+</body>
+</html> -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href=" {% static 'myfirst.css' %} ">
+<body>
+<p1>"My 1st css in django!"<p1/>
+</body>
+</html>
